@@ -1,10 +1,12 @@
 import random
 
+
+
 choices = ["rock", "paper", "scissors"]
 device_pick = random.choice(choices)
 
 while True:
-    playerpick=str(input("Choose from rock, paper, and scissors:  "))
+    playerpick=str(input("Choose from rock, paper, and scissors. To end game, type end:  "))
     if playerpick in choices:
         if playerpick==device_pick:
             print("You are tied with the computer. ")
@@ -14,3 +16,4 @@ while True:
             print("You lost. :(")
     else:
         print(f"{playerpick} not recognized.")
+    
